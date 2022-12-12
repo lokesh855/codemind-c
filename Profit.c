@@ -9,8 +9,7 @@ int main()
         }
         else
         {
-            printf("Loss");
-            }
-            return 0;
+            printf("Loss"); }
+            
     
 }
