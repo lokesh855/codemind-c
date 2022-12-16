@@ -9,10 +9,9 @@ int main()
     {
         printf("%d",max);
         }
-        else 
+        else
         {
-            printf("%d",min); 
-            
-        }
+            printf("%d",min);
+            }
     
 }
