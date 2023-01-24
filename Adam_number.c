@@ -1,13 +1,20 @@
 #include<stdio.h>
-int main()
-{
-    int a;
+int main(){
+    int a,sq1,sq2,r1,r2,ans1=0,ans2=0,i,j;
     scanf("%d",&a);
-    if(a==0 || a==1 || a==2 || a==3 || a==11 || a==12 || a==13 || a==21 || a==22 || a==31 || a==101 || a==102 || a==103 || a==111 || a==112 || a==113
-    || a==121 || a==122 || a==201 || a==202 || a==211 || a==212 || a==221 || a==301 || a==311)
+    int b=a;
+    sq1=a*a;
+    for(i=a;a!=0;a=a/10)
     {
-        printf("True");
+        r1=a%10;
+        ans1=ans1*10 + r1;
     }
+    sq2=ans1*ans1;
+    for(i=sq2;sq2!=0;sq2=sq2/10){
+        r2=sq2%10;
+        ans2=ans2*10+r2;
+    }
+    if(ans2==sq1) printf("True");
     else
     {
         printf("False");
